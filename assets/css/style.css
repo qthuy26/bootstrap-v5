@@ -11112,6 +11112,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@-webkit-keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -11264,12 +11274,15 @@ textarea.form-control-lg {
   height: 6rem;
   border: 0.55rem solid #fff;
   border-radius: 50%;
+  -webkit-animation: pulse-border 1.5s linear infinite;
   animation: pulse-border 1.5s linear infinite;
 }
 .border-animation--border-1 {
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 .border-animation--border-2 {
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 
@@ -11288,6 +11301,7 @@ textarea.form-control-lg {
   height: 100%;
 }
 .companies__logo-box img:hover {
+  -webkit-filter: grayscale(120);
   filter: grayscale(120);
 }
 
