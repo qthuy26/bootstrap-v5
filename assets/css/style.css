@@ -11176,6 +11176,7 @@ textarea.form-control-lg {
 .display-2--intro {
   display: inline-block;
   font-weight: 700;
+  font-size: 3.5rem;
 }
 .display-2--description {
   font-size: 1rem;
